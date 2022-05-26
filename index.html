@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Travel Landing Page</title>
+
+  <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+
+
+</head>
+
+
+<body>
+  <!-- "showcase active" is turned toward the end -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Travel</h2>
+      <!-- disable active : "toggle" "hamburger is on menu"/close: "toggle active" into close-->
+      <div class="toggle"></div>
+    </header>
+
+    <video src="explore-2.mp4" muted loop autoplay></video>
+
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop To</h2>
+      <h3>Exploring the World</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo numquam voluptates cum maiores aliquam sit
+        ducimus explicabo facilis, aliquid nihil?</p>
+      <a href="#">Explore</a>
+    </div>
+
+
+
+    <!-- <div class="class"> -->
+    <ul class="social">
+      <!-- <li><a href="#"></a><img src="facebook.png" alt="" /></a></li>
+      <li><a href="#"></a><img src="twitter.png" alt="" /></a></li>
+      <li><a href="#"></a><img src="instagram.png" alt="" /></a></li> -->
+
+
+      <li><a href="#"><img src="icons/facebook.png"></a></li>
+      <li><a href="#"><img src="icons/twitter.png"></a></li>
+      <li><a href="#"><img src="icons/instagram.png"></a></li>
+
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <!-- <li><a href="#"><span class="abc">Home</span></a></li> -->
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+  </script>
+
+</body>
+
+</html>
